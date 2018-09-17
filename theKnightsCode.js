@@ -12,6 +12,7 @@ export function beginner_click(event) {
 	$w("#lessonText").text = lessons[0];
 	$w("#popup").show();
 	$w("#overlay").show();
+	
 	$w("#start").show();
 }
 
@@ -19,14 +20,16 @@ export function intermediate_click(event) {
 	$w("#lessonText").text = lessons[1];
 	$w("#popup").show();
 	$w("#overlay").show();
-	$w("#start").show();
+	
+	$w("#startInter").show();
 }
 
 export function advance_click(event) {
 	$w("#lessonText").text = lessons[2];
 	$w("#popup").show();
 	$w("#overlay").show();
-	$w("#start").show();
+	
+	$w("#startAdv").show();
 }
 
 export function overlay_click(event) {
@@ -34,6 +37,9 @@ export function overlay_click(event) {
 	$w("#popup").hide();
 	$w("#overlay").hide();
 	$w("#exit").hide();
+	$w("#startInter").hide();
+	$w("#start").hide();
+	$w("#startAdv").hide();
 }
 
 
